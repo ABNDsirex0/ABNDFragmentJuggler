@@ -33,7 +33,7 @@ public class ViewPagerFragment extends Fragment {
         //Create viewPager to swipe between categories
         viewPager = rootView.findViewById(R.id.view_pager);
         // Create an adapter that knows which fragment should be shown on each page
-        FragmentPageAdapter adapter = new FragmentPageAdapter(getFragmentManager());
+        ParametricFragmentPageAdapter adapter = new ParametricFragmentPageAdapter(getFragmentManager());
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
 
